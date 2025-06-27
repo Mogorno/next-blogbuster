@@ -1,0 +1,30 @@
+.container {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.social {
+    display: flex;
+    gap: 10px;
+}
+.icons {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 15px;
+    opacity: 0.6;
+    transition: 0.3s;
+
+    &:hover {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    &:active {
+        transform: scale(1);
+    }
+}

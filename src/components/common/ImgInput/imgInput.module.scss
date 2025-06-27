@@ -1,0 +1,50 @@
+.button {
+    padding: 0;
+    margin: 0;
+    top: 5px;
+    right: 5px;
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.3s;
+
+    &:hover {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    &:active {
+        transform: scale(0.9);
+    }
+}
+.label {
+    padding: 5px 0 5px 0;
+    width: 100%;
+}
+.content {
+    display: flex;
+    gap: 10px;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+}
+.imgContainer {
+    position: relative;
+    width: calc(50% - 5px);
+    aspect-ratio: 1/1;
+}
+.image {
+    object-fit: cover;
+    border-radius: 5px;
+}
+.iconContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    cursor: pointer;
+}
+.icon {
+    font-size: 35px;
+}

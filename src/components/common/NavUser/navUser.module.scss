@@ -1,0 +1,51 @@
+.container {
+    display: flex;
+    gap: 10px;
+    margin-left: 15px;
+}
+.imgContainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #4d2d52;
+}
+
+.img {
+    object-fit: cover;
+    width: 100%; /* Додайте цей рядок */
+    height: 100%; /* та цей рядок */
+}
+.icon {
+    font-size: 35px;
+    text-shadow: 0px 0px 3px #b191ff, 0px 0px 6px #1d1a31;
+}
+.text {
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logout {
+    padding: 2px 5px 2px 5px;
+    border: none;
+    background-color: #4d2d52;
+    color: #b191ff;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+
+    &:hover {
+        color: #1d1a31;
+        background-color: #df99f0;
+    }
+
+    &:active {
+        transform: scale(0.9);
+    }
+}

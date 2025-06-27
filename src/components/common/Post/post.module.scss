@@ -1,0 +1,90 @@
+.post {
+    position: relative;
+}
+.container {
+    border-radius: 5px;
+    display: flex;
+    background-color: #4d2d5200;
+    transition: 0.5s;
+
+    &:hover {
+        background-color: #4d2d5282;
+        .imgContainer {
+            transform: scale(0.95);
+        }
+    }
+    &:active {
+        transform: scale(0.95);
+    }
+}
+.imgContainer {
+    flex: 1;
+    aspect-ratio: 1/1;
+    display: flex;
+    position: relative;
+    transition: 0.3s;
+}
+.img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+.text {
+    flex: 2;
+    padding: 0 10px 0 30px;
+    aspect-ratio: 3/1;
+    overflow: hidden;
+}
+.title {
+    margin: 10px 0 30px 0;
+}
+.description {
+    text-indent: 20px;
+    line-height: 1.5;
+}
+.content {
+    position: relative;
+    margin-top: 5px;
+    padding-top: 5px;
+    text-indent: 20px;
+    line-height: 1.5;
+
+    &::before {
+        content: '';
+        border-radius: 5px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 3px;
+        background-color: #4d2d52;
+    }
+}
+.actions {
+    gap: 10px;
+    top: 5px;
+    right: 5px;
+    position: absolute;
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+}
+
+.icon {
+    font-size: larger;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    aspect-ratio: 1/1;
+    transition: 0.3s;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.5);
+    }
+}

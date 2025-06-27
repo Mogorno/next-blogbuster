@@ -1,0 +1,44 @@
+.container {
+    width: 40px;
+    height: 20px;
+    box-shadow: 0 0 0 2px #4d2d52, 0 0 0 2px #4d2d52;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border-radius: 30px;
+    position: relative;
+    cursor: pointer;
+    flex-grow: 0;
+    transition: 0.5s;
+    background-color: #4d2d5284;
+
+    &:hover {
+        box-shadow: 0 0 0 3px #4d2d52, 0 0 0 3px #4d2d52;
+    }
+    &:active {
+        transform: scale(0.95);
+        .ball {
+            background-color: #d664be;
+        }
+    }
+    user-select: none;
+}
+
+.icon {
+    height: calc(100% - 2px);
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    position: relative;
+}
+
+.ball {
+    border-radius: 50%;
+    height: calc(100% - 2px);
+    aspect-ratio: 1/1;
+    background-color: #4d2d52;
+    position: absolute;
+    top: 1px;
+    transition: 0.5s;
+}

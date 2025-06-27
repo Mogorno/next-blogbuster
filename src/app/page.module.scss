@@ -1,0 +1,102 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    margin: 100px 0 100px 0;
+}
+.content {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+.item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background: linear-gradient(to bottom, #4d2d52, #d664be);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    h1 {
+        width: 100%;
+        font-size: 72px;
+        font-weight: bold;
+    }
+    h2 {
+        width: 100%;
+        font-size: 30px;
+        display: flex;
+        justify-content: flex-end;
+    }
+    h3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+.img {
+    width: 100%;
+    object-fit: contain;
+    height: 100%;
+    -webkit-filter: drop-shadow(5px 5px 5px #4d2d52);
+    filter: drop-shadow(5px 5px 5px #4d2d52);
+
+    animation: move 4s infinite ease alternate;
+}
+@keyframes move {
+    from {
+        transform: translateY(-15px) rotate(3deg);
+        -webkit-filter: drop-shadow(5px 5px 0px #4d2d52);
+        filter: drop-shadow(5px 5px 0px #4d2d52);
+    }
+    to {
+        transform: translateY(15px) scale(1.05) (357deg);
+        -webkit-filter: drop-shadow(5px 5px 5px #1d1a31);
+        filter: drop-shadow(5px 5px 5px #1d1a31);
+    }
+}
+.descImage {
+    margin-left: 50%;
+    width: 50%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    animation: descImageMove 10s infinite ease-in-out alternate;
+}
+
+@keyframes descImageMove {
+    from {
+        transform: translateX(-50%) rotate(0deg);
+        -webkit-filter: drop-shadow(5px 5px 5px #4d2d52);
+        filter: drop-shadow(5px 5px 5px #4d2d52);
+    }
+    to {
+        transform: translateX(0) scale(1.05) rotate(45deg);
+        -webkit-filter: drop-shadow(5px 5px 0px #1d1a31);
+        filter: drop-shadow(5px 5px 0px #1d1a31);
+    }
+}
+
+.icon {
+    margin: 0 5px 0 5px;
+}
+.description {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    text-indent: 20px;
+    background: linear-gradient(to left, #d664be, #4d2d52);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
