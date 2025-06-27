@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Blog Platform – Next.js 13 (Legacy Project)
 
-## Getting Started
+This is an older personal project, a simple blog application built with Next.js 13 and JavaScript.
+The project implements full CRUD functionality for managing blog posts and integrates user authentication and a database:
 
-First, run the development server:
+NextAuth.js for authentication and session management
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+MongoDB with Mongoose for storing posts and user data
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Dynamic routing for individual post pages
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Server-side rendering for improved SEO
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Clean, minimalistic user interface
 
-## Learn More
+Modern app directory structure introduced in Next.js 13
 
-To learn more about Next.js, take a look at the following resources:
+This project served as a learning example for building a basic content management system with Next.js, authentication, and MongoDB.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Screenshots
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Home page
 
-## Deploy on Vercel
+![Preview](public/screenshots/home-page-1.png)
+![Home Page](public/screenshots/home-page-2.png)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Dashboard page
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+![Dashboard](public/screenshots/dashboard-page-1.png)
+![Dashboard](public/screenshots/dashboard-page-2.png)
+![Dashboard](public/screenshots/dashboard-page-3.png)
+
+### About page.
+
+![About Page](public/screenshots/about-page.png)
+
+### Contact page.
+
+![Contact Page](public/screenshots/contact-page.png)
+
+### Portfolio page.
+
+![Portfolio Page](public/screenshots/portfolio-page.png)
+
+### Blog page.
+
+![Blog Page](public/screenshots/blog-page.png)
+
+### Post page.
+
+![Post Page](public/screenshots/post-page.png)
